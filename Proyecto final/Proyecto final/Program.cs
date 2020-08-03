@@ -12,16 +12,16 @@ namespace Proyecto_final
         {
             Console.WriteLine("********Proyecto Final*********");
 
-            string[] ced1 = new string[4];
-            string[] nombre = new string[4];
-            int[] clave = new int[4];
+            string[] ced1 = new string[5];
+            string[] nombre = new string[5];
+            int[] clave = new int[5];
             int rol = 0;
             int estado = 0;
             long ced_int;
             string name = "";
 
             int cont = 0;
-            while (cont <= 3)
+            while (cont <= 4)
             {
                 for (int i = 0; i <= cont; i++)
                 {
@@ -33,7 +33,7 @@ namespace Proyecto_final
                         {
                             Console.WriteLine("Digite el No. usuario otra vez, no puede contener letras o signos");
                             ced1[cont] = Console.ReadLine();
-                        } while (long.TryParse(ced1[cont], out ced_int) == false); 
+                        } while (long.TryParse(ced1[cont], out ced_int) == false);
                     }
 
                     if (ced1[cont].Length != 11)
@@ -60,7 +60,7 @@ namespace Proyecto_final
                 clave[cont] = 0;
                 clave[cont] = Convert.ToInt32(Console.ReadLine());
 
-                DateTime[] fecha_creacion = new DateTime[4];
+                DateTime[] fecha_creacion = new DateTime[5];
                 fecha_creacion[cont] = DateTime.Now;
                 Console.WriteLine("El usuario se creo en: " + fecha_creacion[cont].ToString());
 
@@ -113,6 +113,13 @@ namespace Proyecto_final
                     name = nombre[3];
                     valido = 1;
                 }
+                else if (ced1[4] == ced && clave[4] == clave1)
+                {
+                    c = 4;
+                    p = 4;
+                    name = nombre[4];
+                    valido = 1;
+                }
                 else
                 {
                     valido = 0;
@@ -122,7 +129,7 @@ namespace Proyecto_final
                 if (valido == 1)
                 {
                     Random aleatorio = new Random();
-                    int rnd = aleatorio.Next(1, 4);
+                    int rnd = aleatorio.Next(1, 3);
                     string role_name = (rol == 1 ? "Administrador" : rol == 2 ? "Supervisor" : "Vendedor");
 
                     Random aleatory = new Random();
@@ -131,11 +138,13 @@ namespace Proyecto_final
 
                     if (estados == "Activo")
                     {
+                        Console.Clear();
                         Console.WriteLine("\nBienvenido {0}, ha ingresado con el usuario {1}, su rol es {2}", name, ced1[c], role_name);
                     }
                     else if (estados == "Inactivo")
                     {
                         valido = 0;
+                        Console.Clear();
                         Console.WriteLine("El usuario que registro se encuentra inactivo, intente con otro");
                     }
                 }

@@ -4,3 +4,6 @@ C:\Users\JOSE MANUEL\documents\visual studio 2013\Projects\Proyecto final\Proyec
 C:\Users\JOSE MANUEL\documents\visual studio 2013\Projects\Proyecto final\Proyecto final\obj\Debug\Proyecto final.exe
 C:\Users\JOSE MANUEL\documents\visual studio 2013\Projects\Proyecto final\Proyecto final\obj\Debug\Proyecto final.pdb
 C:\Users\JOSE MANUEL\documents\visual studio 2013\Projects\Proyecto final\Proyecto final\obj\Debug\Proyecto final.csprojResolveAssemblyReference.cache
+C:\Users\JOSE MANUEL\Documents\GitHub\Proyecto-final\Proyecto final\Proyecto final\bin\Debug\Proyecto final.exe.config
+C:\Users\JOSE MANUEL\Documents\GitHub\Proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.exe
+C:\Users\JOSE MANUEL\Documents\GitHub\Proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.pdb

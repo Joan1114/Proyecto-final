@@ -129,7 +129,7 @@ namespace Proyecto_final
                 if (valido == 1)
                 {
                     Random aleatorio = new Random();
-                    int rnd = aleatorio.Next(1, 3);
+                    int rnd = aleatorio.Next(1, 4);
                     string role_name = (rol == 1 ? "Administrador" : rol == 2 ? "Supervisor" : "Vendedor");
 
                     Random aleatory = new Random();
@@ -144,7 +144,6 @@ namespace Proyecto_final
                     else if (estados == "Inactivo")
                     {
                         valido = 0;
-                        Console.Clear();
                         Console.WriteLine("El usuario que registro se encuentra inactivo, intente con otro");
                     }
                 }
